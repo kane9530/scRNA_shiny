@@ -8,7 +8,7 @@ library(tidyr)
 # Some initial setup:
 # this will not work if underscores are in the orig.ident (only for some views)
 # take in the file, get list of genes, get metadata numbers and categories, get pcs 1-9, and factors..
-aggregate <- readRDS('Keller_more_clusterings.rds')
+aggregate <- readRDS('bladder.combined.sct.rds')
 genes = aggregate@assays$RNA
 reductions <- attributes(aggregate@reductions)
 meta_nums <- colnames(dplyr::select_if(aggregate@meta.data, is.numeric))

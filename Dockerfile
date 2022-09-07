@@ -39,7 +39,7 @@ RUN Rscript -e 'memory.limit(size=20000)'
 # copy necessary files
 ## app folder
 COPY app.R /app.R
-COPY Keller_more_clusterings.rds /Keller_more_clusterings.rds
+COPY bladder.combined.sct.RDS /bladder.combined.sct.RDS
 COPY README.md /README.md
 
 
